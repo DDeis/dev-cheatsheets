@@ -76,6 +76,23 @@ clean history:
 git rebase -i origin/branch 
 git rebase -i @{upstream}
 ```
+switch branch:
+```
+git checkout branch
+```
+merge branch into develop (fast forward):
+```
+git checkout develop
+git merge branch
+```
+true merge
+```
+git merge branch --no-ff
+```
+block true merge:
+```
+git merge branch --ff-only
+```
 cherry pick:
 ```
 git rebase 76acada^
