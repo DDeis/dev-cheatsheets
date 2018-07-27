@@ -17,7 +17,7 @@ git config --global core.editor "nano -w"
 
 Create alias:
 ```sh
-git config --global alias.tidy "rebase -i @{upstream}.."
+git config --global alias.tidy "rebase -i @{upstream}"
 ```
 
 ## Branchs
