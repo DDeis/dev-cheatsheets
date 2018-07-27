@@ -53,3 +53,32 @@ fetch and delete and remove any remote tracking branches which no longer exist o
 ```
 git fetch --prune (-p)
 ```
+
+delete local remote-tracking branches:
+```
+git remote prune origin
+```
+list merged branches:
+```
+git branch -a --merged
+```
+
+rebase local changes on top of the remote branch:
+```
+git pull --rebase origin <branch>
+```
+reapply branch commits on top of develop
+```
+git rebase develop <branch>
+```
+cherry pick:
+```
+git rebase 76acada^
+```
+
+Refs:
+```
+HEAD^       # 1 commit before head
+HEAD^^      # 2 commits before head
+HEAD~5      # 5 commits before head
+```
