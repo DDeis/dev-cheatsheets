@@ -97,6 +97,14 @@ cherry pick:
 ```
 git rebase 76acada^
 ```
+throw away local changes to match remote master
+```
+git reset --hard origin/master
+```
+overwrite remote branch to match local branch:
+```
+git push -f
+```
 
 Refs:
 ```
