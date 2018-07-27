@@ -71,6 +71,11 @@ reapply branch commits on top of develop
 ```
 git rebase develop <branch>
 ```
+clean history:
+```
+git rebase -i origin/branch 
+git rebase -i @{upstream}
+```
 cherry pick:
 ```
 git rebase 76acada^
