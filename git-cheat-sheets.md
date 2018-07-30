@@ -106,6 +106,12 @@ overwrite remote branch to match local branch:
 git push -f
 ```
 
+Stash:
+Delete all stashes
+```
+git stash clear
+```
+
 Refs:
 ```
 HEAD^       # 1 commit before head
